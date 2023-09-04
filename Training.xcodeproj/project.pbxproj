@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BC143BF2AA60E0A00CCEEAA /* ListExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC143BE2AA60E0A00CCEEAA /* ListExerciseView.swift */; };
 		6BDA89832AA5E34000FBF473 /* TrainingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA89822AA5E34000FBF473 /* TrainingApp.swift */; };
 		6BDA89852AA5E34000FBF473 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA89842AA5E34000FBF473 /* ContentView.swift */; };
 		6BDA89872AA5E34200FBF473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BDA89862AA5E34200FBF473 /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 		6BDA89952AA5E34200FBF473 /* TrainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA89942AA5E34200FBF473 /* TrainingTests.swift */; };
 		6BDA899F2AA5E34200FBF473 /* TrainingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA899E2AA5E34200FBF473 /* TrainingUITests.swift */; };
 		6BDA89A12AA5E34200FBF473 /* TrainingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA89A02AA5E34200FBF473 /* TrainingUITestsLaunchTests.swift */; };
+		6BDA89EC2AA5EF5400FBF473 /* ExerciseModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA89EA2AA5EF5400FBF473 /* ExerciseModel.xcdatamodeld */; };
+		6BDA89EE2AA5F29200FBF473 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA89ED2AA5F29200FBF473 /* DataController.swift */; };
+		6BDA89F12AA5F87700FBF473 /* AddExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA89F02AA5F87700FBF473 /* AddExerciseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6BC143BE2AA60E0A00CCEEAA /* ListExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExerciseView.swift; sourceTree = "<group>"; };
 		6BDA897F2AA5E34000FBF473 /* Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Training.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BDA89822AA5E34000FBF473 /* TrainingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingApp.swift; sourceTree = "<group>"; };
 		6BDA89842AA5E34000FBF473 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +50,9 @@
 		6BDA899A2AA5E34200FBF473 /* TrainingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BDA899E2AA5E34200FBF473 /* TrainingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingUITests.swift; sourceTree = "<group>"; };
 		6BDA89A02AA5E34200FBF473 /* TrainingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6BDA89EB2AA5EF5400FBF473 /* ExerciseModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExerciseModel.xcdatamodel; sourceTree = "<group>"; };
+		6BDA89ED2AA5F29200FBF473 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		6BDA89F02AA5F87700FBF473 /* AddExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +103,10 @@
 		6BDA89812AA5E34000FBF473 /* Training */ = {
 			isa = PBXGroup;
 			children = (
-				6BDA89822AA5E34000FBF473 /* TrainingApp.swift */,
+				6BDA89EF2AA5F83100FBF473 /* Views */,
 				6BDA89842AA5E34000FBF473 /* ContentView.swift */,
+				6BDA89E92AA5EF0700FBF473 /* DataModel */,
+				6BDA89822AA5E34000FBF473 /* TrainingApp.swift */,
 				6BDA89862AA5E34200FBF473 /* Assets.xcassets */,
 				6BDA89882AA5E34200FBF473 /* Training.entitlements */,
 				6BDA89892AA5E34200FBF473 /* Preview Content */,
@@ -127,6 +137,24 @@
 				6BDA89A02AA5E34200FBF473 /* TrainingUITestsLaunchTests.swift */,
 			);
 			path = TrainingUITests;
+			sourceTree = "<group>";
+		};
+		6BDA89E92AA5EF0700FBF473 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BDA89EA2AA5EF5400FBF473 /* ExerciseModel.xcdatamodeld */,
+				6BDA89ED2AA5F29200FBF473 /* DataController.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		6BDA89EF2AA5F83100FBF473 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6BDA89F02AA5F87700FBF473 /* AddExerciseView.swift */,
+				6BC143BE2AA60E0A00CCEEAA /* ListExerciseView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +288,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BDA89852AA5E34000FBF473 /* ContentView.swift in Sources */,
+				6BDA89EE2AA5F29200FBF473 /* DataController.swift in Sources */,
+				6BDA89EC2AA5EF5400FBF473 /* ExerciseModel.xcdatamodeld in Sources */,
+				6BDA89F12AA5F87700FBF473 /* AddExerciseView.swift in Sources */,
+				6BC143BF2AA60E0A00CCEEAA /* ListExerciseView.swift in Sources */,
 				6BDA89832AA5E34000FBF473 /* TrainingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,6 +644,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6BDA89EA2AA5EF5400FBF473 /* ExerciseModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6BDA89EB2AA5EF5400FBF473 /* ExerciseModel.xcdatamodel */,
+			);
+			currentVersion = 6BDA89EB2AA5EF5400FBF473 /* ExerciseModel.xcdatamodel */;
+			path = ExerciseModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6BDA89772AA5E34000FBF473 /* Project object */;
 }
